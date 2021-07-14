@@ -12,8 +12,8 @@ speakers = ["Ferfer", "murd0c", "Mati", "Luqui", "Nacho", "Flwerr", "bri_96"]
 subject = ["Rust", "Node", "React", "Haskell", "Python",
            "GraphQL?", "Ingles ah no Moni no está jeje"]
 
-frases = ["Joya", "JAJAJA LPM", "chupala gato",
-          "ferlacion",  "eee no se, que se yo", "No se puede creer estos caras de remil verga", "Sos trolo?", "me quiero morir", "si si", "aham", "messirve", "FIUUUUMBA", "VALORES Y PRINCIPIOS", "COMO NO TE VAN A GUSTAR LOS SANGUCHITOS DE MIGA?", "ah re"]
+cosas = ["Joya", "JAJAJA LPM", "chupala gato",
+         "ferlacion",  "eee no se, que se yo", "No se puede creer estos caras de remil verga", "Sos trolo?", "me quiero morir", "si si", "aham", "messirve", "FIUUUUMBA", "VALORES Y PRINCIPIOS", "COMO NO TE VAN A GUSTAR LOS SANGUCHITOS DE MIGA?", "ah re"]
 
 month = ["Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 day = random.randint(1, 31)
@@ -26,7 +26,7 @@ despedida = ["ay deberia estar durmiendo", "deberia estar trabajando xd"]
 
 @bot.command()
 async def frase(ctx):
-    await ctx.send(random.choice(frases))
+    await ctx.send(random.choice(cosas))
 
 
 @bot.command()
