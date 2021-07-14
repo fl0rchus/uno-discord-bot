@@ -1,10 +1,12 @@
 import discord
 from discord.ext import commands
 import random
+import os
+
+TOKEN = os.environ.get('TOKEN')
 
 bot = commands.Bot(command_prefix="!")
 
-token = "ODY0Njc4MjgxMDMwOTI2MzQ2.YO48Zw.NzxqQzKseExtlPsFpxV6AX5vplc"
 
 speakers = ["Ferfer", "murd0c", "Mati", "Luqui", "Nacho", "Flwerr"]
 subject = ["Rust", "Node", "React", "Haskell", "Python",
@@ -54,4 +56,4 @@ async def on_ready():
     await bot.change_presence(activity=discord.Game(name="Decidir nuevas charlas"))
     print("Alive")
 
-bot.run(token)
+bot.run(TOKEN)
